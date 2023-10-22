@@ -9,6 +9,4 @@ services:
     ports:
      - "3000:3000"
     volumes:
-    - type: bind
-      source: "./public/"
-      target: "/user/src/app/public/"
+      - ./public/:/user/src/app/public/
