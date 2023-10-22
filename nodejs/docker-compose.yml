@@ -1,0 +1,14 @@
+version: "3.9"
+services:
+  qiita-like-app:
+    image: qiita-like-app-image
+    tty: true
+    container_name: qiita-like-app-container
+    build:
+     context: .
+    ports:
+     - "3000:3000"
+    volumes:
+    - type: bind
+      source: "./public/"
+      target: "/user/src/app/public/"
