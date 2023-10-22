@@ -247,7 +247,7 @@ router.post('/post',function(req, res, next){
       // データベースクローズ
       db.close();
       // リダイレクト
-      res.redirect('http://localhost:3000');
+      res.redirect('/');
       next();
     }
   ])
