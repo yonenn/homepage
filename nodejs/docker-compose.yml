@@ -1,7 +1,7 @@
 version: "3.9"
 services:
   qiita-like-app:
-    image: qiita-like-app-image
+    image: yonen330/qiita-like-app-image:1.0.1
     tty: true
     container_name: qiita-like-app-container
     build:
