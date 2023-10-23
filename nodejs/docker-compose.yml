@@ -1,7 +1,7 @@
 version: "3.9"
 services:
   qiita-like-app:
-    image: yonen330/qiita-like-app-image:1.0.1
+    image: yonen330/qiita-like-app-image:1.0.3
     tty: true
     container_name: qiita-like-app-container
     build:
@@ -9,4 +9,6 @@ services:
     ports:
      - "3000:3000"
     volumes:
-      - ./public/:/user/src/app/public/
+      - public-data:/user/src/app/public/
+volumes:
+ public-data:
