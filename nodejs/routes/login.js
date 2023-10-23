@@ -15,7 +15,7 @@ router.get('/',function(req, res){
             <fieldset>
                 :message
                 <p>NAME <input type="text" name="name" required><p>
-                <p>PASSWORD <input type="text" name="pass" required></p>
+                <p>PASSWORD <input type="password" name="pass" required></p>
                 <input type="hidden" name="redirect" id="rd">
                 <button class="btn btn-primary" id="login">login</button>
             </fieldset>
